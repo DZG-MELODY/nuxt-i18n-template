@@ -2,5 +2,23 @@
   "cSpell.words": [
     "Nuxt",
     "nuxtjs"
+  ],
+  // 调试相关设置
+  "debug.javascript.unmapMissingSources": true,
+  "debug.javascript.autoAttachFilter": "smart",
+  // Vue 和 Nuxt 相关设置
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  // 排除不需要监视的文件
+  "files.watcherExclude": {
+    "**/.nuxt/**": true,
+    "**/node_modules/**": true,
+    "**/.output/**": true,
+    "**/.data/**": true
+  },
+  "i18n-ally.localesPaths": [
+    "i18n",
+    "i18n/locales"
   ]
 }
