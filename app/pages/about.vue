@@ -7,7 +7,7 @@ const { locale } = useI18n()
 
 const { data: about } = await useAsyncData(
   `about-${locale.value}`,
-  async () => {
+   () => {
     return queryCollection("about")
       .where('stem', 'LIKE', `%${locale.value}`)
       .first()
